@@ -11,7 +11,14 @@ int main(){
 
 	scanf("%s",arr);
 	printf("%s\n",arr);
+	
+	int k=strlen(arr);
+	
+	for(i=k;i>=0;i--){	
+	rev_arr[k-i-1]=arr[i];	
+	}
 
+	printf("%s\n",rev_arr);
 	return 0;
 	
 }
